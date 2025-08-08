@@ -1,0 +1,16 @@
+.choose_way{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+    margin-top: 5%;
+}
+.choose_way .ptod{
+    width: 40%;
+    height: 100%;
+
+}
+.choose_way .dtop{
+    width: 40%;
+    height: 100%;
+}
