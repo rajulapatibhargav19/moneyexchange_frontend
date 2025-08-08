@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height to center vertically */
+  height: 100vh; 
   background-color: #f0f0f0;
+  width:400px;
+  padding:fit-content;
+
 }
 
 .login-container {
@@ -20,7 +23,7 @@
 }
 
 .login-form .form-control {
-  height: 30px; /* Reduce height of input boxes */
+  height: 30px; 
   font-size: 14px;
 }
 
