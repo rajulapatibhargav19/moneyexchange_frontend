@@ -1,0 +1,10 @@
+.way form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.way form div{
+    width: 40%;
+    margin-top: 2%;
+}

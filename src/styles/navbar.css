@@ -1,0 +1,21 @@
+.nav_tag .nav_ul li{
+    list-style-type: none;
+    
+}
+.nav_tag .nav_ul li a{
+    text-decoration: none;
+    color:white;
+    
+    
+}
+.nav_tag .nav_ul li img{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.nav_tag .active{
+   padding: 10px 15px;
+   background-color: green;
+   
+
+}
