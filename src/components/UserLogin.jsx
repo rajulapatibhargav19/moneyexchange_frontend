@@ -3,6 +3,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/UserLogin.css";
 
+
 function UserLogin() {
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
@@ -54,7 +55,7 @@ function UserLogin() {
           {error && <p className="error-message">{error}</p>}
 
           <p className="text-center">
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            Don't have an account? <Link to="/user-dashboard">Sign up</Link>
           </p>
 
           <Button variant="primary" type="submit" className="w-100">

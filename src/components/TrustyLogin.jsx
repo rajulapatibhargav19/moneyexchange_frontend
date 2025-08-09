@@ -54,7 +54,7 @@ function TrustyLogin() {
           {error && <p className="error-message">{error}</p>}
 
           <p className="text-center">
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            Don't have an account? <Link to="/trusty-dashboard">Sign up</Link>
           </p>
 
           <Button variant="primary" type="submit" className="w-100">
