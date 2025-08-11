@@ -1,0 +1,91 @@
+/*
+
+.userq h1{
+    text-align: center;
+    color: brown;
+    margin-top:15vh;
+    
+}
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+  */
+
+
+
+
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* .card_container .card {
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+  margin:0px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+     */
+.card strong {
+  /* display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:black;  */
+  font-size: 18px;
+}
+
+/* .card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin:0px;
+  color:white;
+} */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.container .userq{
+    color: orangered;
+}
+
+/* Center search box */
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 85vw;
+  margin: 20px 0;
+}
+.center-box input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* .container .back_color{
+    background-color:lemonchiffon;
+} */
+/*
+.container .back_color .body_color{
+    background-color: lightgreen;
+}*/
+/* .container .back_color .body_color strong{
+     background-color: aquamarine;
+    color: black;
+} */
