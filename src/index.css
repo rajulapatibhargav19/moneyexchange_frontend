@@ -1,7 +1,64 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: rgb(35, 57, 72);
-    color: white;
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font color */
+body {
+ background-color: rgb(35,57,72) !important;
+ color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/* Wrapper to center content */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+}
+
+/* The login form box */
+.login-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background-color: #218838;
 }

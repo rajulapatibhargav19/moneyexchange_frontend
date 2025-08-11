@@ -1,33 +1,52 @@
-.login-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  background-color: #f0f0f0;
-  width:400px;
-  padding:fit-content;
-}
-
-.login-container {
-  width: 350px;
+/* Set wheat background for the card */
+.login-card {
+  background-color: wheat;
   padding: 30px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-.login-title {
-  text-align: center;
-  margin-bottom: 20px;
+/* Headings and labels */
+.login-card h2,
+.login-card label,
+.signup-text {
+  color: black;
+  background-color: wheat;
+  display: block;
 }
 
-.login-form .form-control {
-  height: 30px; 
-  font-size: 14px;
+/* Remove the green/blue by making form background wheat too */
+.login-card form {
+  background-color: wheat;
 }
 
-.error-message {
-  color: red;
-  text-align: center;
-  margin-bottom: 10px;
+/* Make signup link background wheat */
+.signup-text a {
+  background-color: wheat;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Inputs remain white */
+.login-card input {
+  background-color: white;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Login button stays blue */
+.login-btn {
+  background-color: blue !important;
+  border: none !important;
+}
+.box1 {
+    min-height: 100vh; /* full height of screen */
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
 }
