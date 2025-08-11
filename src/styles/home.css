@@ -1,0 +1,54 @@
+.home .services{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+.services .card{
+    width: 30%;
+}
+.services .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont div{
+    display: flex;
+    align-items: center;
+    gap:5%;
+
+}
+.cont div img{
+    width: 20%;
+}
+.cont .lastimg{
+    margin: 5%;
+    width: 50%;
+    height: 50%;
+}
+.cont div p{
+    font-size: large;
+    font-weight: bold;
+}
+.map_cont .img{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.map_cont img{
+    
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+}
+.map_cont p{
+    font-size: large;
+    font-weight: bold;
+}
