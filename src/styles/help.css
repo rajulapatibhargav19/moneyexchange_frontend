@@ -62,6 +62,13 @@
 }
 .container .userq{
     color: orangered;
+    padding: 0px;
+    margin-bottom: 0px;
+   
+}
+.container .userq h1{
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Center search box */
@@ -71,7 +78,7 @@
   align-items: center;
   height: 10vh;
   width: 85vw;
-  margin: 20px 0;
+  margin: 0px 0;
 }
 .center-box input {
   padding: 8px 12px;
