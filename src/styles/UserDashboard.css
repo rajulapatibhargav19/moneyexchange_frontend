@@ -1,5 +1,9 @@
 .mt-5 {
+<<<<<<< HEAD
   background-color: #1e83e8;
+=======
+  background-color:pink;
+>>>>>>> 721d787a828de1a8982265d99f72835bd1fd561a
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

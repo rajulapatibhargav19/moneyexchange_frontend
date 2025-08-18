@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/TrustyLogin.css";
 
@@ -11,12 +11,10 @@ function TrustyLogin() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
     if (!userId || !password) {
       setError("Please fill in both fields.");
       return;
     }
-
     if (userId === "user" && password === "123") {
       navigate("/user-dashboard");
     } else {
@@ -26,13 +24,12 @@ function TrustyLogin() {
 
   return (
     <div className="login-wrapper">
-      <Container className="login-container">
-        <h4 className="login-title">Trusty Login</h4>
-        <Form className="login-form" onSubmit={handleLogin}>
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="trustyId">Trusty ID</Form.Label>
+      <div className="login-card">
+        <h2>Trusty Login</h2>
+        <Form onSubmit={handleLogin}>
+          <Form.Group>
+            <Form.Label>Trusty ID</Form.Label>
             <Form.Control
-              id="trustyId"
               type="text"
               placeholder="Enter User ID"
               value={userId}
@@ -40,10 +37,9 @@ function TrustyLogin() {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3">
-            <Form.Label htmlFor="password">Password</Form.Label>
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
             <Form.Control
-              id="password"
               type="password"
               placeholder="Enter Password"
               value={password}
@@ -53,15 +49,15 @@ function TrustyLogin() {
 
           {error && <p className="error-message">{error}</p>}
 
-          <p className="text-center">
+          <p className="signup-text">
             Don't have an account? <Link to="/trusty-dashboard">Sign up</Link>
           </p>
 
-          <Button variant="primary" type="submit" className="w-100">
+          <Button type="submit" className="w-100 login-btn">
             Login
           </Button>
         </Form>
-      </Container>
+      </div>
     </div>
   );
 }

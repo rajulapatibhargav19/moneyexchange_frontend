@@ -7,8 +7,12 @@
 
 /* Body background and font color */
 body {
+
+ background-color: rgb(35,57,72) !important;
+ color: white;
+
   background-color: rgb(35, 57, 72);
-  color: rgb(247, 243, 243);
+  color: white;
   font-family: Arial, sans-serif;
   height: 100vh;
 }
@@ -23,7 +27,7 @@ body {
 
 /* The login form box */
 .login-box {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 10px;
   width: 350px;
