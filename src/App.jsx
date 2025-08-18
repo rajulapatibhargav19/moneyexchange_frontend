@@ -16,10 +16,18 @@ import GoogleMapCont from './components/home/GoogleMapCont'
 
 import UserDashboard from './components/UserDashboard'
 import TrustyDashboard from './components/TrustyDashboard'
-
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://127.0.0.1:8000/api/users/")
+      .then(response => setUsers(response.data))
+      .catch(error => console.error(error));
+  }, []);
 
   return (
    <div>
@@ -46,6 +54,16 @@ function App() {
 
 
       </Routes>
+      <div>
+      <h1>User List</h1>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>
+            {user.username} - {user.phone_number}
+          </li>
+        ))}
+      </ul>
+    </div>
    </div>
   )
 }

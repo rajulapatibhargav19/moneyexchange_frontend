@@ -10,12 +10,12 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  background: linear-gradient(135deg, #fefeff, #eef0f3);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .details {
-  background-color:#fff;
+  background-color:#2f22ee;
   padding: 20px 10px;
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -25,20 +25,20 @@
 .details h1 {
   text-align: center;
   margin-bottom: 30px;
-  color:black;
+  color:rgb(241, 234, 234);
   font-size: 28px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .details p {
   text-align: center;
   margin-bottom: 20px;
-  color: #0c1524;
+  color: #f7f8fa;
   font-size: 16px;
 }
 .details label {
   display: block;
   margin-bottom: 4px;
-  color: #2d3748;
+  color: #eaecef;
 }
 
 
@@ -78,5 +78,5 @@
 }
 
 .details .btn:hover {
-  background-color: #2b6cb0;
+  background-color: #eff3f6;
 }
